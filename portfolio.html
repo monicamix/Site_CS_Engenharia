@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio da CS Engenharia: Veja nossos casos de sucesso em laudos, projetos residenciais, comerciais e industriais.">
+  <title>Nosso Portfólio — CS Engenharia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="header-wrap">
+    <header class="header">
+      <a href="index.html"><img src="images/logo.png" alt="CS Engenharia" class="logo" height="60"></a>
+      <button class="menu-toggle">☰</button>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="about.html" class="nav-link">A Empresa</a>
+        <a href="services.html" class="nav-link">Serviços</a>
+        <a href="portfolio.html" class="nav-link active">Portfólio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contatos</a>
+      </nav>
+    </header>
+  </div>
+
+  <main>
+    <section class="hero fade-in" style="padding-bottom: 40px;">
+      <div class="hero-content">
+        <h1 class="hero-title">Casos de Sucesso</h1>
+        <p class="hero-text">Uma seleção de projetos onde nossa engenharia fez a diferença na segurança e economia da obra.</p>
+      </div>
+    </section>
+
+    <section class="wrapper">
+      <div class="filter-bar fade-in">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="estrutural">Projetos Estruturais</button>
+        <button class="filter-btn" data-filter="laudos">Laudos & Perícias</button>
+        <button class="filter-btn" data-filter="industrial">Industrial</button>
+      </div>
+
+      <div class="grid-3 fade-in">
+        
+        <article class="portfolio-item" data-category="estrutural">
+          <img src="images/proj_1.jpg" alt="Edifício Residencial Altos da Glória" loading="lazy">
+          <div class="portfolio-overlay">
+            <h3>Edifício Altos da Glória</h3>
+            <p>Projeto estrutural completo de torre com 25 pavimentos. Economia de 12% em aço com otimização via software.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item" data-category="laudos">
+          <img src="images/proj_2.jpg" alt="Vistoria de galpão logístico" loading="lazy">
+          <div class="portfolio-overlay">
+            <h3>Centro Logístico Raposo</h3>
+            <p>Laudo de Recebimento de Obra de galpão AAA com 50.000m². Identificação e correção de 150+ não conformidades.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item" data-category="industrial">
+          <img src="images/proj_3.jpg" alt="Reforço estrutural em indústria" loading="lazy">
+          <div class="portfolio-overlay">
+            <h3>Indústria Metalúrgica Stark</h3>
+            <p>Projeto de reforço estrutural com fibra de carbono para suporte de novos maquinários pesados.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item" data-category="estrutural">
+          <img src="images/proj_4.jpg" alt="Residência de Alto Padrão em condomínio" loading="lazy">
+          <div class="portfolio-overlay">
+            <h3>Residência Cond. Alphaville</h3>
+            <p>Estrutura em balanço de 6 metros com concreto protendido, atendendo à arquitetura arrojada.</p>
+          </div>
+        </article>
+
+  <article class="portfolio-item" data-category="laudos">
+  <iframe 
+      src="https://www.youtube.com/embed/BtBCLB_agCw" 
+      title="INSPEÇÃO DE OBRAS COM DRONE" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen
+      style="width: 100%; height: 100%; position: absolute; inset: 0;">
+  </iframe>
+  <div class="portfolio-overlay">
+    <h3>Inspeção com Drone</h3>
+    <p>Vídeo demonstrativo de nossa tecnologia de inspeção de fachadas em altura utilizando drones 4K.</p>
+  </div>
+</article>
+
+        <article class="portfolio-item" data-category="industrial">
+          <img src="images/proj_5.jpg" alt="Complexo fabril" loading="lazy">
+          <div class="portfolio-overlay">
+            <h3>Complexo Fabril Delta</h3>
+            <p>Gerenciamento BIM da construção de nova unidade fabril, coordenando mais de 15 disciplinas simultâneas.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox-overlay" style="display: none; position: fixed; inset:0; background: rgba(0,0,0,0.9); z-index: 2000; align-items:center; justify-content:center;">
+      <button class="close" aria-label="Fechar" style="position: absolute; top: 20px; right: 30px; color: #fff; background: none; border: none; font-size: 3rem; cursor: pointer;">&times;</button>
+      <img id="lightbox-img" src="" alt="Imagem ampliada" style="max-width: 90%; max-height: 90vh; border-radius: 8px; display: none;">
+      <video id="lightbox-video" controls style="max-width: 90%; max-height: 90vh; border-radius: 8px; display: none;"></video>
+  </div>
+<footer class="footer">
+    <div class="wrapper" style="padding: 20px 0;">
+      <img src="images/logo.png" alt="CS Engenharia" style="height: 80px; margin: 0 auto 1.5rem auto; filter: brightness(0) invert(1); opacity: 0.8;">
+      <p>© 2025 CS Engenharia CNPJ: 58.220.449/0001-45. Todos os direitos reservados.</p>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; opacity: 0.6;">Compromisso com a integridade técnica e a segurança normativa.</p>
+    </div>
+  </footer>
+</body>
+</html>

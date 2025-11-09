@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a CS Engenharia. Solicite orçamentos para laudos, projetos e consultoria técnica em todo o Brasil.">
+  <title>Fale Conosco — CS Engenharia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <style>
+    /* Estilos específicos para o formulário */
+    .form-group { margin-bottom: 1.5rem; }
+    .form-label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-dark); }
+    .form-input, .form-textarea {
+      width: 100%; padding: 12px; border: 2px solid #eee; border-radius: 8px;
+      font-family: inherit; transition: border-color 0.3s;
+    }
+    .form-input:focus, .form-textarea:focus { outline: none; border-color: var(--primary); }
+    .form-textarea { resize: vertical; height: 120px; }
+  </style>
+</head>
+
+<body>
+  <div class="header-wrap">
+    <header class="header">
+      <a href="index.html"><img src="images/logo.png" alt="CS Engenharia" class="logo" height="60"></a>
+      <button class="menu-toggle">☰</button>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="about.html" class="nav-link">A Empresa</a>
+        <a href="services.html" class="nav-link">Serviços</a>
+        <a href="portfolio.html" class="nav-link">Portfólio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contatos</a>
+      </nav>
+    </header>
+  </div>
+
+  <main>
+    <section class="hero fade-in">
+      <div class="hero-content">
+        <h1 class="hero-title">Vamos Conversar Sobre Seu Projeto?</h1>
+        <p class="hero-text">Nossa equipe técnica está pronta para entender sua demanda e oferecer a solução mais adequada.</p>
+      </div>
+    </section>
+
+    <section class="wrapper grid-2 fade-in">
+      <div>
+        <h2 class="section-title" style="text-align: left;">Canais de Atendimento</h2>
+        <p style="margin-bottom: 2rem;">Atendemos presencialmente em nosso escritório sede ou remotamente para projetos em todo o território nacional.</p>
+
+        <div class="card" style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: center;">
+          <div style="font-size: 2rem;">📍</div>
+          <div>
+            <strong>Escritório Central</strong>
+            <p>Rua Campinas nº 173, sala 12 - Boqueirão, Praia Grande/SP <br>São Paulo - SP, CEP  11701-000</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: center;">
+          <div style="font-size: 2rem;">📞</div>
+          <div>
+            <strong>Telefone & WhatsApp</strong>
+            <p>(13) 99192-5797<br><small>Seg a Sex, das 9h às 18h</small></p>
+          </div>
+        </div>
+
+        <div class="card" style="display: flex; gap: 1rem; align-items: center;">
+          <div style="font-size: 2rem;">✉️</div>
+          <div>
+            <strong>E-mail Técnico</strong>
+            <p>correntisimoesengenharia@gmail.com<br><small>Resposta em até 24h úteis</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 style="margin-bottom: 1.5rem;">Envie sua Mensagem</h2>
+        <form action="#" method="POST" onsubmit="alert('Mensagem enviada com sucesso! (Simulação)'); return false;">
+          <div class="form-group">
+            <label for="nome" class="form-label">Nome Completo *</label>
+            <input type="text" id="nome" name="nome" class="form-input" required placeholder="Ex: João Silva">
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">E-mail Corporativo *</label>
+            <input type="email" id="email" name="email" class="form-input" required placeholder="joao@suaempresa.com.br">
+          </div>
+
+          <div class="form-group">
+            <label for="telefone" class="form-label">Telefone / WhatsApp *</label>
+            <input type="tel" id="telefone" name="telefone" class="form-input" required placeholder="(11) 99999-9999">
+          </div>
+
+          <div class="form-group">
+            <label for="assunto" class="form-label">Tipo de Solicitação *</label>
+            <select id="assunto" name="assunto" class="form-input" required>
+              <option value="">Selecione uma opção...</option>
+              <option value="orcamento_laudo">Orçamento: Laudo Técnico</option>
+              <option value="orcamento_projeto">Orçamento: Projeto Estrutural</option>
+              <option value="parceria">Proposta de Parceria</option>
+              <option value="outros">Outros Assuntos</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem" class="form-label">Detalhes do Projeto</label>
+            <textarea id="mensagem" name="mensagem" class="form-textarea" placeholder="Descreva brevemente sua necessidade (localização, tipo de obra, área aproximada)..."></textarea>
+          </div>
+
+          <button type="submit" class="cta" style="width: 100%; border: none; cursor: pointer; font-size: 1rem;">Enviar Solicitação</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+<footer class="footer">
+    <div class="wrapper" style="padding: 20px 0;">
+      <img src="images/logo.png" alt="CS Engenharia" style="height: 80px; margin: 0 auto 1.5rem auto; filter: brightness(0) invert(1); opacity: 0.8;">
+      <p>© 2025 CS Engenharia CNPJ: 58.220.449/0001-45. Todos os direitos reservados.</p>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; opacity: 0.6;">Compromisso com a integridade técnica e a segurança normativa.</p>
+    </div>
+  </footer>
+</body>
+</html>
