@@ -5,7 +5,7 @@
 /* ---------- VARIÁVEIS E CONFIGURAÇÕES GLOBAIS ---------- */
 :root {
   --primary: #C99B4A;
-  --primary-dark: #9A7532;
+  --primary-dark: #a17b34;
   /* Ajustado para melhor contraste */
   --primary-light: #EBCB88;
   --text: #333333;
@@ -160,12 +160,15 @@ ul {
 
 /* ---------- CABEÇALHO ---------- */
 .header-wrap {
-  background: linear-gradient(135deg, #F9F3E5 0%, var(--white) 100%);
+  /* Inverti a ordem: comecei com o branco (0%) e terminei com o dourado (100%) */
+  background: linear-gradient(135deg, var(--white) 0%, #e7c575 300%);
   box-shadow: var(--shadow-sm);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
+
 
 .header {
   display: flex;
