@@ -452,3 +452,84 @@ ul.gold-list li::before {
   font-weight: 900;      /* Deixa o ícone mais espesso e visível */
   font-family: sans-serif;
 }
+
+/* ---------- ESTILOS ESPECÍFICOS DO ARTIGO ---------- */
+.article-card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.article-content {
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.article-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+}
+
+.article-content p {
+  margin-bottom: 1.5rem;
+}
+
+.article-content ul {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  list-style-type: disc; /* Usa marcadores padrão para o artigo */
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+}
+
+.article-figure {
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+.article-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+}
+
+.article-figcaption {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.case-study-box {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-left: 4px solid var(--primary);
+  margin: 2.5rem 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.case-study-title {
+  margin-top: 0;
+  color: var(--primary-dark);
+}
+
+.case-study-quote {
+  font-style: italic;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.article-footer-text {
+  font-weight: 600;
+  color: var(--primary-dark);
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid #eee;
+}
